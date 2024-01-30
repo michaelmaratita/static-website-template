@@ -57,42 +57,42 @@ jobs:
           run: ${{ steps.apply-run.outputs.run_id }}
           comment: "Apply Run from GitHub Actions CI ${{ github.sha }}"
 
-  get_cloudfront_id:
-    name: Validate CloudFront ID in Terraform
-    runs-on: ubuntu-latest
-    needs: terraform
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+  # get_cloudfront_id:
+  #   name: Validate CloudFront ID in Terraform
+  #   runs-on: ubuntu-latest
+  #   needs: terraform
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4
       
-      - name: Install Terraform
-        uses: hashicorp/setup-terraform@v3
-        with:
-          cli_config_credentials_token:  ${{ secrets.TF_API_TOKEN }}
+  #     - name: Install Terraform
+  #       uses: hashicorp/setup-terraform@v3
+  #       with:
+  #         cli_config_credentials_token:  ${{ secrets.TF_API_TOKEN }}
 
-      - name: Terraform Init
-        id: init
-        run: |
-         cd ./infra/
-         terraform init
+  #     - name: Terraform Init
+  #       id: init
+  #       run: |
+  #        cd ./infra/
+  #        terraform init
 
-      - name: Retrieve CloudFront ID
-        id: cloudfront_id
-        run: |
-          cd ./infra/
-          echo "cloudfront_id=$(terraform output -raw cloudfront_distribution_id)" >> $GITHUB_OUTPUT
-    outputs:
-      cloudfront_id: ${{ steps.cloudfront_id.outputs.cloudfront_id }}
+  #     - name: Retrieve CloudFront ID
+  #       id: cloudfront_id
+  #       run: |
+  #         cd ./infra/
+  #         echo "cloudfront_id=$(terraform output -raw cloudfront_distribution_id)" >> $GITHUB_OUTPUT
+  #   outputs:
+  #     cloudfront_id: ${{ steps.cloudfront_id.outputs.cloudfront_id }}
 
-  invalidate_cloudfront:
-    name: Invalidate CloudFront Distribution
-    runs-on: ubuntu-latest
-    needs: get_cloudfront_id
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+  # invalidate_cloudfront:
+  #   name: Invalidate CloudFront Distribution
+  #   runs-on: ubuntu-latest
+  #   needs: get_cloudfront_id
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4
 
-      - name: Invalidate CloudFront
-        id: invalidation
-        run: |
-          aws cloudfront create-invalidation --distribution-id ${{ needs.get_cloudfront_id.outputs.cloudfront_id }} --paths "/*"
+  #     - name: Invalidate CloudFront
+  #       id: invalidation
+  #       run: |
+  #         aws cloudfront create-invalidation --distribution-id ${{ needs.get_cloudfront_id.outputs.cloudfront_id }} --paths "/*"
