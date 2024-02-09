@@ -13,7 +13,7 @@ def lambda_handler(event, context):
 
 def getViewerCount():
     response = client.get_item(
-        TableName = 'views_count',
+        TableName = 'my_site_visitors',
         Key={
             'Id': {
                 'N': '0'
@@ -31,7 +31,7 @@ def updateTable():
     viewer_count = old_count + 1
     
     client.update_item(
-        TableName = 'views_count',
+        TableName = 'my_site_visitors',
         Key={
             'Id': {
                 'N': '0'
