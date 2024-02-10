@@ -13,7 +13,7 @@ def lambda_handler(event, context):
 def get_topic():
     topic_arns = client.list_topics()['Topics']
     for arn in topic_arns:
-        if 'mailme' in arn['TopicArn']:
+        if 'INPUT_TOPIC_NAME' in arn['TopicArn']:   # Change TOPIC Name
             return arn['TopicArn']
 
 def sendMail(event):
