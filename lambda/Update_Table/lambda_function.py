@@ -26,8 +26,7 @@ def getViewerCount():
     
 
 def updateTable():
-    old_count = int(getViewerCount())
-    viewer_count = old_count + 1
+    viewer_count = int(getViewerCount()) + 1
     
     client.update_item(
         TableName = 'INPUT_TABLE_NAME',  # Change Table Name to your table
