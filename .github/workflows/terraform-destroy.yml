@@ -29,10 +29,14 @@ jobs:
       # Initialize Terraform
       - name: Terraform Init
         id: init
-        run: terraform init
+        run: |
+         cd ./infra/
+         terraform init
 
       
       # Apply confirms and applies the run
       - name: Terraform Destroy
-        id: apply
-        run: terraform destroy
+        id: destroy
+        run: |
+         cd ./infra/
+         terraform destroy
