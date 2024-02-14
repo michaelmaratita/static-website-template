@@ -2,7 +2,7 @@
 
 In this module, you will create a DynamoDB table and table item for your visitor count. This will store your visitor counts whenever someone loads your site.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707408963056/7aac94b5-8cf5-48a5-b1b9-4741270b308d.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707408963056/7aac94b5-8cf5-48a5-b1b9-4741270b308d.jpeg)
 
 > Note: This data will be added later to be viewable on your site.
 
@@ -25,7 +25,7 @@ In this module, you will create a DynamoDB table and table item for your visitor
 * Select **Submit new issue**
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707409163295/9af109ae-9ecd-4b37-8b83-98f6f2c61573.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707409163295/9af109ae-9ecd-4b37-8b83-98f6f2c61573.png)
 
 * On the right pane, under Development, Select **Create a branch**
     
@@ -51,7 +51,7 @@ git checkout YOUR_BRANCH_NAME
 * In this section, you will create the DynamoDB table. Locate the `dynamodb` folder in `./infra/modules/aws`.
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707416290716/a0bf9010-4bec-4798-b2e6-dd726a4ab9b5.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707416290716/a0bf9010-4bec-4798-b2e6-dd726a4ab9b5.png)
 
 ### main.tf
 
@@ -86,7 +86,7 @@ git checkout YOUR_BRANCH_NAME
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707414755881/276e752b-8c61-46dc-a5a3-346d496a90d3.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707414755881/276e752b-8c61-46dc-a5a3-346d496a90d3.png)
     
     > This will create the DynamoDB table. Majority of the variables will be defined with default values.
     
@@ -150,7 +150,7 @@ git checkout YOUR_BRANCH_NAME
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707415051473/c43815b4-a159-441b-987e-16fc18f528c1.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707415051473/c43815b4-a159-441b-987e-16fc18f528c1.png)
     
     > The only variables without default values are the `name`, `hash_key`, and `type` entries.
     
@@ -190,7 +190,7 @@ git checkout YOUR_BRANCH_NAME
         }
         ```
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707416126637/0d9bdfd3-8981-42b0-969a-a0308f3e60d3.png align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707416126637/0d9bdfd3-8981-42b0-969a-a0308f3e60d3.png)
         
         > The only required outputs are the `name` and `hash_key` values.
         
@@ -203,7 +203,7 @@ git checkout YOUR_BRANCH_NAME
 
 * Within the `./infra/modules/aws/dynamodb`, there is a subfolder named `dynamodb_table_item`. Here you will modify the Terraform files associated with that module.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707416270067/11e54679-664c-486d-b117-8749358c0364.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707416270067/11e54679-664c-486d-b117-8749358c0364.png)
     
 
 ### main.tf
@@ -223,7 +223,7 @@ git checkout YOUR_BRANCH_NAME
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707417329045/a261cc1f-b2de-4aac-bd32-8ab3ac17fa60.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707417329045/a261cc1f-b2de-4aac-bd32-8ab3ac17fa60.png)
     
     > This will create a table item for Table that will be created and will use the hash\_key associated with that table.
     > 
@@ -253,7 +253,7 @@ git checkout YOUR_BRANCH_NAME
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707417515646/c51f390d-9f12-4735-91d9-050d9eb475aa.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707417515646/c51f390d-9f12-4735-91d9-050d9eb475aa.png)
     
 * Save the file.
     
@@ -267,7 +267,7 @@ git checkout YOUR_BRANCH_NAME
 * In this section, you will combine the DynamoDB Table and DynamoDB Table Item into a singular module. Locate the `dynamodb_table` folder in `./infra/modules/dynamodb_table`.
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707418691346/36b63556-2e31-4a76-8005-d403a5f1665c.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707418691346/36b63556-2e31-4a76-8005-d403a5f1665c.png)
 
 ### main.tf
 
@@ -291,7 +291,7 @@ git checkout YOUR_BRANCH_NAME
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707419287913/eacda937-1a07-4689-b251-8665e5b4f451.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707419287913/eacda937-1a07-4689-b251-8665e5b4f451.png)
     
     > This module will create the DynamoDB table and table item associated with the table.
     
@@ -324,7 +324,7 @@ git checkout YOUR_BRANCH_NAME
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707449316847/99ef03ec-eb4e-4e74-a1d2-f8061c63ee13.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707449316847/99ef03ec-eb4e-4e74-a1d2-f8061c63ee13.png)
     
 * Save the file
     
@@ -360,7 +360,7 @@ git checkout YOUR_BRANCH_NAME
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707449338980/e0cbb178-e9eb-4294-b511-4979d643e3a0.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707449338980/e0cbb178-e9eb-4294-b511-4979d643e3a0.png)
     
 * Save the file
     
@@ -387,7 +387,7 @@ git checkout YOUR_BRANCH_NAME
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707449569848/ba835786-0ad3-4c70-9b44-dec685c3fd65.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707449569848/ba835786-0ad3-4c70-9b44-dec685c3fd65.png)
     
 * Save the file
     
@@ -418,7 +418,7 @@ git checkout YOUR_BRANCH_NAME
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707449639023/9cbeaaa6-bef2-40ba-8681-dab0aa963994.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707449639023/9cbeaaa6-bef2-40ba-8681-dab0aa963994.png)
     
     * Save the file
         
@@ -454,7 +454,7 @@ git checkout YOUR_BRANCH_NAME
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707496293943/2680ae84-aed1-4c4b-ae3e-c6309663084b.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707496293943/2680ae84-aed1-4c4b-ae3e-c6309663084b.png)
     
 * Save the file
     
@@ -482,7 +482,7 @@ git checkout YOUR_BRANCH_NAME
         ITEM
         ```
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707496843178/234f9e8f-f95b-4e7a-8b1b-7d0778d0b89a.png align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707496843178/234f9e8f-f95b-4e7a-8b1b-7d0778d0b89a.png)
         
         > The table\_item is a heredoc that defines the structure of the DynamoDB Table.
         
@@ -520,7 +520,7 @@ git checkout YOUR_BRANCH_NAME
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707495860144/bdfba1ac-b7d0-4003-88d7-05fdda3299f5.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707495860144/bdfba1ac-b7d0-4003-88d7-05fdda3299f5.png)
     
 * Save the file
     
@@ -569,9 +569,9 @@ git push
 
 Your Terraform Plan should run before you can merge to `main`.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707496159291/a7dbdcfc-4e39-4d1e-93e7-a4c8f087de6a.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707496159291/a7dbdcfc-4e39-4d1e-93e7-a4c8f087de6a.png)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707496920823/d8e662b6-7ac7-4340-bf78-05b52d5a12bc.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707496920823/d8e662b6-7ac7-4340-bf78-05b52d5a12bc.png)
 
 > If you are using the same site files from the original template, the plan to add 2 should match.
 
@@ -601,13 +601,13 @@ git pull
 * You should see your new table listed under the Tables section
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707497382163/19c05f9d-967f-43ad-87b3-0aef13a4e4ab.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707497382163/19c05f9d-967f-43ad-87b3-0aef13a4e4ab.png)
 
 * Under Tables &gt; Select **Explore items** &gt; Select your table
     
 * You should see the values set as below:
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707497465464/6eff5bab-1ace-436a-9f18-891799540902.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707497465464/6eff5bab-1ace-436a-9f18-891799540902.png)
     
     > In the later modules, you will validate the Table item `value` being updated via your Lambda function.
     

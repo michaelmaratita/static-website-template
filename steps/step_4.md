@@ -2,13 +2,13 @@
 
 In the previous module, you created your S3 bucket. Now it's time to upload your site files. In this module you will create the resource block for creating objects for your S3 Bucket. Let's get started!
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706652183018/90bcca68-f35e-4875-9058-b2f9d102dbe9.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706652183018/90bcca68-f35e-4875-9058-b2f9d102dbe9.jpeg)
 
 ---
 
 [Terraform S3 Bucket Object Reference](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_object)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706630104507/50406a81-fcef-4b02-8776-8ff3007d6779.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706630104507/50406a81-fcef-4b02-8776-8ff3007d6779.png)
 
 I have included a basic template from [HTML5 UP!](https://html5up.net/) to utilize for the exercises.
 
@@ -25,14 +25,14 @@ I have included a basic template from [HTML5 UP!](https://html5up.net/) to utili
 * Select **Submit new issue**
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706632470798/3b8da002-40c0-4697-80cf-5366538035c3.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706632470798/3b8da002-40c0-4697-80cf-5366538035c3.png)
 
 * On the right pane, under Development, Select **Create a branch**
     
 * Leave the defaults &gt; Select **Create branch**
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706632501895/5c91f218-a405-4628-9b73-084650107d83.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706632501895/5c91f218-a405-4628-9b73-084650107d83.png)
 
 * Open your IDE Terminal.
     
@@ -53,7 +53,7 @@ git checkout YOUR_BRANCH_NAME
 
 In this section you will be modifying the main, variables and outputs Terraform files located in `./infra/modules/aws/s3/s3_object/`.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706633103672/a39269f4-e69e-466a-9c5b-8eebe885ad99.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706633103672/a39269f4-e69e-466a-9c5b-8eebe885ad99.png)
 
 ### main.tf
 
@@ -71,7 +71,7 @@ In this section you will be modifying the main, variables and outputs Terraform 
         }
         ```
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706633498217/e4f34ea4-ac20-4b47-80e4-abeddad7b830.png align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706633498217/e4f34ea4-ac20-4b47-80e4-abeddad7b830.png)
         
         > The only required fields for creating an S3 Object are the `bucket` and `key` arguments. However, here you will define the source (where the file is located), content\_type (what kind of file it is), and etag (triggers updates when the file is modified).
         
@@ -115,7 +115,7 @@ In this section you will be modifying the main, variables and outputs Terraform 
         }
         ```
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706656244210/ef60a73c-a6a7-4973-8ac7-3aadd978fbec.png align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706656244210/ef60a73c-a6a7-4973-8ac7-3aadd978fbec.png)
         
     
     > Each of the values are strings. The nullable argument specifies is the value can be null. The default value for content\_type will be text/html if there is no variable passed to the argument.
@@ -151,7 +151,7 @@ In this section you will be modifying the main, variables and outputs Terraform 
         }
         ```
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706659111884/b07fc1ff-94f9-41ed-99a7-e0e6f3406f5c.png align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706659111884/b07fc1ff-94f9-41ed-99a7-e0e6f3406f5c.png)
         
 * Save the file
     
@@ -195,7 +195,7 @@ In this section, you will modify the terraform files within `./infra/modules/my_
         }
         ```
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706659533554/d18a5444-dcd3-404d-84eb-eda4f1309cdd.png align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706659533554/d18a5444-dcd3-404d-84eb-eda4f1309cdd.png)
         
         > The locals variable references the mime.json file within my\_portfolio folder. This file contains key:value pairs for common Content-Types. The jsonencode function provides JSON syntax that can be used to pull the string values for each key.
         > 
@@ -203,7 +203,7 @@ In this section, you will modify the terraform files within `./infra/modules/my_
         > 
         > The two module block approach is due to a couple of html files that do not have the `.html` extension. This is to have a cleaner appearing site.
         > 
-        > ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706661271927/e2ebdd26-e436-4ec6-984e-aafdb4ee2463.png align="center")
+        > ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706661271927/e2ebdd26-e436-4ec6-984e-aafdb4ee2463.png)
         > 
         > Example:  
         > https://example.com/generic.html vs. https://example.com/generic
@@ -228,7 +228,7 @@ In this section, you will modify the terraform files within `./infra/modules/my_
         }
         ```
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706661791560/8d67f450-796a-471d-8719-61064b9d5b8d.png align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706661791560/8d67f450-796a-471d-8719-61064b9d5b8d.png)
         
         > As the description notes, this will be the relative path from `./infra/main.tf` to the files you want. In the case of this module, we will target the public folder for var.file\_path.
         
@@ -249,7 +249,7 @@ In this section, you will modify the terraform files within `./infra/modules/my_
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706687429181/4cbada14-b218-4c8b-832c-434b2d265b68.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706687429181/4cbada14-b218-4c8b-832c-434b2d265b68.png)
     
     > Each file of each module will have to be defined for their respective outputs. For brevity, I've only included two. Feel free to find the values you want and include them.
     
@@ -270,7 +270,7 @@ In this section, you will modify the terraform files within `./infra/modules/my_
         file_path   = "../public"
         ```
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706685472677/ec2c90eb-c1a3-44b5-ad96-a5d05f066aff.png align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706685472677/ec2c90eb-c1a3-44b5-ad96-a5d05f066aff.png)
         
 
 ### variables.tf and outputs.tf
@@ -292,7 +292,7 @@ output "main_css_etag" {
 }
 ```
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706687524900/2edb5f71-6ea4-48b0-85de-8c08cb984fef.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706687524900/2edb5f71-6ea4-48b0-85de-8c08cb984fef.png)
 
 > This will output those values to the Terraform Cloud outputs.
 
@@ -340,9 +340,9 @@ git push
 
 Your Terraform Plan should run before you can merge to `main`.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706687836576/2e409c62-9ac2-4afb-990e-f78d6c978c20.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706687836576/2e409c62-9ac2-4afb-990e-f78d6c978c20.png)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706687960962/f92546d3-53b3-477e-862f-419a051acf04.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706687960962/f92546d3-53b3-477e-862f-419a051acf04.png)
 
 > If you are using the same site files from the original template, the plan to add 73 should match.
 
@@ -372,12 +372,12 @@ git pull
     * Select your Bucket, and you should see the files uploaded
         
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706688265327/d8e44400-76b6-4492-a208-8c3743b2765e.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706688265327/d8e44400-76b6-4492-a208-8c3743b2765e.png)
 
 * You can validate the Content-Type by selecting any file. In this example, I have selected the generic file, which has no defined dot file extension. Scrolling to the Metadata section you will see the content type is `text/html`.
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706688410591/d921c085-222d-4958-900f-eba929b6bfe7.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706688410591/d921c085-222d-4958-900f-eba929b6bfe7.png)
 
 ---
 

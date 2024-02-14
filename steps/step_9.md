@@ -2,7 +2,7 @@
 
 In this module, you will be creating your API Gateway and a couple of resources that will interact with your Lambda Functions from the previous module. You will create API resources that will utilize POST HTTP Methods. Once your API Gateway is deployed, I will walk you through testing your Lambda functions through the API Gateway to ensure proper functionality.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707782039652/97ce49ac-288d-44b2-b4e0-3d00075f24ca.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707782039652/97ce49ac-288d-44b2-b4e0-3d00075f24ca.jpeg)
 
 ---
 
@@ -21,14 +21,14 @@ In this module, you will be creating your API Gateway and a couple of resources 
 * Select Submit new issue.
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706256775082/9eac1912-d6af-450d-a3e9-dde0ac552e5c.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706256775082/9eac1912-d6af-450d-a3e9-dde0ac552e5c.png)
 
 * On the right pane, under Development, Select Create a branch.
     
 * Leave the defaults &gt; Select Create branch.
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706256924274/c6095345-5ba0-4427-8eb2-db4dc11849f4.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706256924274/c6095345-5ba0-4427-8eb2-db4dc11849f4.png)
 
 * Open your IDE Terminal.
     
@@ -49,7 +49,7 @@ git checkout YOUR_BRANCH_NAME
 
 In this section you will be modifying the main, variables and outputs Terraform files located in `./infra/modules/aws/api_gateway/`.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707760707118/4ddfff78-b58a-4838-b22d-e91854ac5658.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707760707118/4ddfff78-b58a-4838-b22d-e91854ac5658.png)
 
 ### main.tf
 
@@ -66,7 +66,7 @@ In this section you will be modifying the main, variables and outputs Terraform 
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707764512080/06c9b727-c596-4986-a9da-273eeca199ae.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707764512080/06c9b727-c596-4986-a9da-273eeca199ae.png)
     
     > This will create a REST API Gateway that will have resources and methods associated with it
     
@@ -94,7 +94,7 @@ In this section you will be modifying the main, variables and outputs Terraform 
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707764541873/fd3b77bb-4bc5-4c39-8833-eadfde9f1d24.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707764541873/fd3b77bb-4bc5-4c39-8833-eadfde9f1d24.png)
     
 * Save the file
     
@@ -135,7 +135,7 @@ In this section you will be modifying the main, variables and outputs Terraform 
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707764580610/9c11a61a-8216-4cd7-af8c-6e0fe6868d46.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707764580610/9c11a61a-8216-4cd7-af8c-6e0fe6868d46.png)
     
     > The `id` and `root_resource_id` in particular will be required to create the resource and methods and associate it with the API gateway that will be created.
     
@@ -161,7 +161,7 @@ In this section you will be modifying the main, variables and outputs Terraform 
     ```
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707771834925/c59fea3f-6fed-4127-82b3-0373ea649772.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707771834925/c59fea3f-6fed-4127-82b3-0373ea649772.png)
 
 > This will create a resource associated with the API Gateway.
 
@@ -189,7 +189,7 @@ In this section you will be modifying the main, variables and outputs Terraform 
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707772097813/3c4c19f0-29bd-4ef0-be4f-281bad65eb17.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707772097813/3c4c19f0-29bd-4ef0-be4f-281bad65eb17.png)
     
 * Save the file
     
@@ -210,7 +210,7 @@ In this section you will be modifying the main, variables and outputs Terraform 
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707773550801/55a5b75d-8077-4f1a-b720-20185ad00e2b.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707773550801/55a5b75d-8077-4f1a-b720-20185ad00e2b.png)
     
 * Save the file
     
@@ -232,7 +232,7 @@ Four resources will be defined for the Resource Method (POST)
 * Method Response
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707773938345/c55c07db-afd0-44dc-85d6-944ab18f4aaf.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707773938345/c55c07db-afd0-44dc-85d6-944ab18f4aaf.png)
 
 ### main.tf
 
@@ -311,7 +311,7 @@ Four resources will be defined for the Resource Method (POST)
     ```
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707779019761/31f76ffb-223e-4437-9d75-41f7c689a4ed.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707779019761/31f76ffb-223e-4437-9d75-41f7c689a4ed.png)
 
 * Save the file
     
@@ -402,7 +402,7 @@ Four resources will be defined for the Resource Method (POST)
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707779879990/809c1ac7-5e22-4476-8740-bbf6b269a76c.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707779879990/809c1ac7-5e22-4476-8740-bbf6b269a76c.png)
     
     > Here you define some default variable inputs for the POST method using default values.
     
@@ -430,7 +430,7 @@ Four resources will be defined for the Resource Method (POST)
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707779913235/e7be2e08-5bb2-403b-8024-da0cbe4542ee.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707779913235/e7be2e08-5bb2-403b-8024-da0cbe4542ee.png)
     
 * Save the file
     
@@ -491,7 +491,7 @@ In this section you will be modifying the main, variables and outputs Terraform 
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707780264344/d70733a9-9fd6-4ce9-8943-2ca27e820373.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707780264344/d70733a9-9fd6-4ce9-8943-2ca27e820373.png)
     
 * Save the file
     
@@ -531,7 +531,7 @@ In this section you will be modifying the main, variables and outputs Terraform 
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707780287568/0a3d9a9a-6072-4807-8730-479be1f12d7d.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707780287568/0a3d9a9a-6072-4807-8730-479be1f12d7d.png)
     
 * Save the file
     
@@ -590,7 +590,7 @@ For the API Gateway to interact with your respective Lambda functions, you will 
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707782855641/9e9b6539-91e8-4b6b-881f-ccc7897a7bb0.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707782855641/9e9b6539-91e8-4b6b-881f-ccc7897a7bb0.png)
     
 * Save the file
     
@@ -606,7 +606,7 @@ For the API Gateway to interact with your respective Lambda functions, you will 
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707782990510/51992639-a187-49a8-8c8c-7cc789bb9855.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707782990510/51992639-a187-49a8-8c8c-7cc789bb9855.png)
     
 * Save the file
     
@@ -625,7 +625,7 @@ In this section, you will include the argument for the api\_gateway\_arn.
     api_gateway_arn = var.api_gateway_arn
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707783141428/d0b74182-99f4-4d9b-ab62-9459102b15ad.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707783141428/d0b74182-99f4-4d9b-ab62-9459102b15ad.png)
     
 * Save the file
     
@@ -641,7 +641,7 @@ In this section, you will include the argument for the api\_gateway\_arn.
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707783209386/65e680d1-36e0-4473-9681-430ebdf6ccb7.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707783209386/65e680d1-36e0-4473-9681-430ebdf6ccb7.png)
     
 * Save the file
     
@@ -686,7 +686,7 @@ In this section, you will update my\_portfolio module to include the creation of
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707785051253/267fee7d-a703-4384-a55d-f847d607a108.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707785051253/267fee7d-a703-4384-a55d-f847d607a108.png)
     
 * Modify your entry for `module.lambda_dynamodb` and `module.lambda_sns` to include the api\_gateway\_arn argument
     
@@ -697,7 +697,7 @@ In this section, you will update my\_portfolio module to include the creation of
 "${module.api.execution_arn}/*/POST${module.api_resource_dynamodb.path}"
 ```
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707783473439/8227effc-f9ba-47cf-8bf8-67cd10359b3b.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707783473439/8227effc-f9ba-47cf-8bf8-67cd10359b3b.png)
 
 #### sns:
 
@@ -705,7 +705,7 @@ In this section, you will update my\_portfolio module to include the creation of
 "${module.api.execution_arn}/*/POST${module.api_resource_sns.path}"
 ```
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707783537582/af770ef5-e98f-450b-b68b-068983c36ca9.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707783537582/af770ef5-e98f-450b-b68b-068983c36ca9.png)
 
 * Save the file
     
@@ -746,7 +746,7 @@ In this section, you will update my\_portfolio module to include the creation of
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707784141893/ae6e6fd8-28da-4258-91b1-6afe1287df52.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707784141893/ae6e6fd8-28da-4258-91b1-6afe1287df52.png)
     
 * Save the file
     
@@ -774,7 +774,7 @@ In this section, you will define the input variables to pass to the my\_portfoli
     ```
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707784307073/5a7c892f-4ea1-41f9-ad5d-64534c45221b.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707784307073/5a7c892f-4ea1-41f9-ad5d-64534c45221b.png)
 
 * Save the file
     
@@ -824,9 +824,9 @@ git push
 
 Your Terraform Plan should run before you can merge to `main`.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707507381035/e7ab7b40-f5a5-4146-bbd2-c7e953f8ac1d.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707507381035/e7ab7b40-f5a5-4146-bbd2-c7e953f8ac1d.png)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707785181328/a59a84fa-778d-4488-8b0a-020fa40af8e1.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707785181328/a59a84fa-778d-4488-8b0a-020fa40af8e1.png)
 
 > If you are using the same site files from the original template, the plan to add 21 should match.
 
@@ -855,13 +855,13 @@ git pull
     
 * You should see your API listed
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707785382863/803d01fa-8fa2-4b69-971c-10dfd242ad6f.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707785382863/803d01fa-8fa2-4b69-971c-10dfd242ad6f.png)
     
 * Select your API
     
 * Under the resources, you should see your defined resources `emailme` and `viewers`. Both resources should have a POST method and OPTIONS method listed
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707785488649/9419eed3-9265-43e1-bb23-5173790fe205.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707785488649/9419eed3-9265-43e1-bb23-5173790fe205.png)
     
 
 ---
@@ -876,13 +876,13 @@ In this section, you will test your API Gateway resources and the Lambda functio
     
 * Select the Test tab
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707785652571/b3a9f5e0-872d-4281-b1f8-3a77ffe0a325.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707785652571/b3a9f5e0-872d-4281-b1f8-3a77ffe0a325.png)
     
 * Leave the fields blank, and select the Test button at the bottom
     
 * You should receive output like below once completed
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707785729210/8a4f5080-02c8-467a-87ca-2f8299166092.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707785729210/8a4f5080-02c8-467a-87ca-2f8299166092.png)
     
     > Note the views value from DynamoDB has incremented by 1 since the last test.
     
@@ -908,19 +908,19 @@ In this section, you will test your API Gateway resources and the Lambda functio
 }
 ```
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707787508171/9f4436f4-01c9-4b35-b120-13771c214af0.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707787508171/9f4436f4-01c9-4b35-b120-13771c214af0.png)
 
 * Select the Test button at the bottom
     
 * You should receive output like below once completed
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707787577387/74da802a-018b-4b4e-b2bb-df23bb05e74f.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707787577387/74da802a-018b-4b4e-b2bb-df23bb05e74f.png)
 
 * Check your email. If successfully implemented, you should receive an email like below:
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707787626761/9ead2940-c1f1-446e-9f2d-5946d11fe306.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707787626761/9ead2940-c1f1-446e-9f2d-5946d11fe306.png)
 
 ---
 

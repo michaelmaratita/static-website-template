@@ -17,11 +17,11 @@ In summary, I'm proud of what I've achieved and hope that others can leverage my
 * Select the Destroy Infrastructure Workflow
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707878368706/9403ec1e-9faa-4f2c-ac5d-ae4a4c4ff2c6.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707878368706/9403ec1e-9faa-4f2c-ac5d-ae4a4c4ff2c6.png)
 
 * Select the Run workflow dropdown &gt; Select Run workflow button
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707878420107/b934c17d-04f7-461f-98da-c34ae6079194.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707878420107/b934c17d-04f7-461f-98da-c34ae6079194.png)
 
 * Upon completion of the workflow, you can validate your resources within AWS

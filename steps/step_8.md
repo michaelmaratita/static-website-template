@@ -2,7 +2,7 @@
 
 In this module, I will walk you through each of the Lambda functions and how they work, upload those functions to AWS, and test their functionality with their respective resources.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707588074313/af0df9c0-18e1-4a74-af42-057e2790da5c.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707588074313/af0df9c0-18e1-4a74-af42-057e2790da5c.jpeg)
 
 ---
 
@@ -25,14 +25,14 @@ In this module, I will walk you through each of the Lambda functions and how the
 * Select Submit new issue.
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706214727755/2c5e7485-89f4-4f4e-b924-cec3915e04f5.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706214727755/2c5e7485-89f4-4f4e-b924-cec3915e04f5.png)
 
 * On the right pane, under Development, Select Create a branch.
     
 * Leave the defaults &gt; Select Create branch.
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706214764383/da5f0b7d-fab8-4650-b1b0-56dd948f9ad4.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706214764383/da5f0b7d-fab8-4650-b1b0-56dd948f9ad4.png)
 
 * Open your IDE Terminal.
     
@@ -56,9 +56,9 @@ git checkout YOUR_BRANCH_NAME
 * Locate the lambda\_function.py in `./lambda/Update_Table`
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707617796067/8f3fcfea-b737-45e3-bd5d-9362c0923dc7.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707617796067/8f3fcfea-b737-45e3-bd5d-9362c0923dc7.png)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707618420003/3e7297f9-c53a-4d60-9914-c4be5eeebb4b.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707618420003/3e7297f9-c53a-4d60-9914-c4be5eeebb4b.png)
 
 * This lambda\_function utilizes Boto3, the AWS SDK for Python. At the start of the function, boto3 is imported for use.
     
@@ -82,7 +82,7 @@ git checkout YOUR_BRANCH_NAME
 
 #### **updateTable**
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707619040225/0ad6f799-bf34-469b-b8be-0f66cca3a878.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707619040225/0ad6f799-bf34-469b-b8be-0f66cca3a878.png)
 
 * At the start of this function, it defines a viewer\_count variable.
     
@@ -101,7 +101,7 @@ git checkout YOUR_BRANCH_NAME
 
 #### **getViewerCount**
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707620106713/d8534bd8-deb3-4786-8656-1055441af32b.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707620106713/d8534bd8-deb3-4786-8656-1055441af32b.png)
 
 * In this function a response variable is defined.
     
@@ -135,7 +135,7 @@ git checkout YOUR_BRANCH_NAME
     * Replace `INPUT_TABLE_NAME` with your actual table name
         
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707620695884/4b66b2a6-bb03-4663-8f05-bb37322a7fb4.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707620695884/4b66b2a6-bb03-4663-8f05-bb37322a7fb4.png)
 
 * Save the file
     
@@ -149,9 +149,9 @@ git checkout YOUR_BRANCH_NAME
 * Locate the lambda\_function.py in `./lambda/Send_Mail`
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707620916521/f81506ea-facf-489a-a33b-1c36f33c0467.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707620916521/f81506ea-facf-489a-a33b-1c36f33c0467.png)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707620902432/c5770e48-9422-4c5f-b6b4-dea2fa60b1c9.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707620902432/c5770e48-9422-4c5f-b6b4-dea2fa60b1c9.png)
 
 * This lambda\_function utilizes Boto3, the AWS SDK for Python. At the start of the function, boto3 is imported for use.
     
@@ -185,7 +185,7 @@ git checkout YOUR_BRANCH_NAME
 
 #### **sendMail**
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707672893052/301d6521-b85b-40cf-a4cf-9db7dc4844d8.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707672893052/301d6521-b85b-40cf-a4cf-9db7dc4844d8.png)
 
 * This function starts by defining the body as a formatted string.
     
@@ -212,7 +212,7 @@ git checkout YOUR_BRANCH_NAME
 
 #### **get\_topic**
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707672873753/4d46ebc0-e076-4768-8d3e-24130aa1eeda.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707672873753/4d46ebc0-e076-4768-8d3e-24130aa1eeda.png)
 
 * This function defines topic\_arns by calling the list\_topics method and using the Topics key to get the list of Topic ARNs
     
@@ -224,7 +224,7 @@ git checkout YOUR_BRANCH_NAME
 * Input the SNS Topic name in the get\_topic function
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707673974261/4da92b24-29e2-481e-ba79-10c3ce0b5a3e.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707673974261/4da92b24-29e2-481e-ba79-10c3ce0b5a3e.png)
 
 * Save the file
     
@@ -235,7 +235,7 @@ git checkout YOUR_BRANCH_NAME
 
 In this section you will be modifying the main, variables and outputs Terraform files located in `./infra/modules/aws/lambda/`.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707683992145/491768ca-f5a4-449b-88b0-831b445e6d72.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707683992145/491768ca-f5a4-449b-88b0-831b445e6d72.png)
 
 ### main.tf
 
@@ -299,7 +299,7 @@ In this section you will be modifying the main, variables and outputs Terraform 
         }
         ```
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707682677008/7ade28d8-2199-4090-8b33-1574cf5d1629.png align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707682677008/7ade28d8-2199-4090-8b33-1574cf5d1629.png)
         
 * Save the file
     
@@ -368,7 +368,7 @@ In this section you will be modifying the main, variables and outputs Terraform 
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707682819496/b226add0-2a34-45b1-a491-bb480b946a77.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707682819496/b226add0-2a34-45b1-a491-bb480b946a77.png)
     
 * Save the file
     
@@ -439,7 +439,7 @@ In this section you will be modifying the main, variables and outputs Terraform 
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707683220145/d8adb43e-e655-416e-aead-473be8605a3f.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707683220145/d8adb43e-e655-416e-aead-473be8605a3f.png)
     
 * Save the file
     
@@ -468,7 +468,7 @@ In this section you will be modifying the main, variables and outputs Terraform 
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707684631374/3bc24803-1430-438c-a8cc-197f5c15a4fe.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707684631374/3bc24803-1430-438c-a8cc-197f5c15a4fe.png)
     
     > This creates an IAM Role and IAM policy.
     
@@ -496,7 +496,7 @@ In this section you will be modifying the main, variables and outputs Terraform 
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707684706478/8a911e1d-3728-4209-8eb6-0731f7035a97.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707684706478/8a911e1d-3728-4209-8eb6-0731f7035a97.png)
     
 * Save the file
     
@@ -537,7 +537,7 @@ In this section you will be modifying the main, variables and outputs Terraform 
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707684919615/9467b27e-6a77-49ec-904d-a1157061e325.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707684919615/9467b27e-6a77-49ec-904d-a1157061e325.png)
     
 * Save the file
     
@@ -570,7 +570,7 @@ In this section you will be modifying the main, variables and outputs Terraform 
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707685502626/3dfaddbd-a7d4-44b7-87aa-1dd69fc8eb02.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707685502626/3dfaddbd-a7d4-44b7-87aa-1dd69fc8eb02.png)
     
 
 ### variables.tf
@@ -618,7 +618,7 @@ In this section you will be modifying the main, variables and outputs Terraform 
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707685612576/6bdc885c-2cad-4dc1-8027-d7c7bd99b621.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707685612576/6bdc885c-2cad-4dc1-8027-d7c7bd99b621.png)
     
 * Save the file
     
@@ -709,7 +709,7 @@ In this section you will be modifying the main, variables and outputs Terraform 
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707685844970/4c299035-f5cb-4267-a976-5415969c0a0a.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707685844970/4c299035-f5cb-4267-a976-5415969c0a0a.png)
     
 * Save the file
     
@@ -755,7 +755,7 @@ module "lambda_sns" {
 }
 ```
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707686482997/0c28222e-4d77-4b7c-8a4c-da3917e0eec9.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707686482997/0c28222e-4d77-4b7c-8a4c-da3917e0eec9.png)
 
 > The lambda\_function module is called for each of the Lambda functions to be created, and assign the permissions associated with the Lambda function.
 
@@ -828,7 +828,7 @@ module "lambda_sns" {
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707686685429/ad0fc2e3-2c68-43b1-893f-d37e8b757be1.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707686685429/ad0fc2e3-2c68-43b1-893f-d37e8b757be1.png)
     
 * Save the file
     
@@ -869,7 +869,7 @@ module "lambda_sns" {
   ]
 ```
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707752377255/7e2df186-57d2-427c-a379-266c4466a953.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707752377255/7e2df186-57d2-427c-a379-266c4466a953.png)
 
 * Save the file
     
@@ -925,9 +925,9 @@ git push
 
 Your Terraform Plan should run before you can merge to `main`.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707507381035/e7ab7b40-f5a5-4146-bbd2-c7e953f8ac1d.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707507381035/e7ab7b40-f5a5-4146-bbd2-c7e953f8ac1d.png)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707755192201/5f715b3e-865e-432d-a505-4340adbacb76.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707755192201/5f715b3e-865e-432d-a505-4340adbacb76.png)
 
 > If you are using the same site files from the original template, the plan to add 6 should match.
 
@@ -957,7 +957,7 @@ git pull
 * You should see your two Lambda Functions
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707755551823/8d7389e7-444c-49e0-9ac4-fb29f12c3e6f.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707755551823/8d7389e7-444c-49e0-9ac4-fb29f12c3e6f.png)
 
 ### Update\_DynamoDB\_Table
 
@@ -966,11 +966,11 @@ git pull
 * Select the BLUE Test button
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707755640370/a3eeec4a-c793-44a8-b8e0-005641a995bd.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707755640370/a3eeec4a-c793-44a8-b8e0-005641a995bd.png)
 
 * Leave the defaults and select the **Invoke** button at the bottom
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707755778731/a2f5dd42-3e5a-4a92-bb61-766ba3a56d1e.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707755778731/a2f5dd42-3e5a-4a92-bb61-766ba3a56d1e.png)
     
 * You should see the Execution results like below
     
@@ -986,7 +986,7 @@ git pull
 * Select the BLUE Test button
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707756093225/332175eb-748a-4dd5-83d1-e260c431ceaf.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707756093225/332175eb-748a-4dd5-83d1-e260c431ceaf.png)
 
 * In the Event JSON, input the following:
     
@@ -1001,19 +1001,19 @@ git pull
 }
 ```
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707756256741/8bb8576b-b495-48f0-bd7d-59bdeec9a052.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707756256741/8bb8576b-b495-48f0-bd7d-59bdeec9a052.png)
 
 * Select the **Invoke** button at the bottom
     
 * You should see the return value like below
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707756300137/ce829176-09a3-4a53-b934-7f424d908c25.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707756300137/ce829176-09a3-4a53-b934-7f424d908c25.png)
 
 * Check your email. You should receive an email like below.
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707756356843/db9b6d70-3d72-4b01-ad42-e5c4222509e4.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707756356843/db9b6d70-3d72-4b01-ad42-e5c4222509e4.png)
 
 ---
 

@@ -2,7 +2,7 @@
 
 In this module, you will create an S3 bucket that will store your web files. Later you will convert this bucket into a static-hosted website. Let's get started!
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706652139754/e155bbe6-b45e-4367-a865-a4b1643e7b5b.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706652139754/e155bbe6-b45e-4367-a865-a4b1643e7b5b.jpeg)
 
 ---
 
@@ -21,14 +21,14 @@ In this module, you will create an S3 bucket that will store your web files. Lat
 * Select **Submit new issue**
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706123495434/f42a9e35-5d59-4b00-8ade-f9d44115b740.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706123495434/f42a9e35-5d59-4b00-8ade-f9d44115b740.png)
 
 * On the right pane, under Development, Select **Create a branch**
     
 * Leave the defaults &gt; Select **Create branch**
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706123564850/a9d080b4-8199-4e5d-907b-c027ff848da9.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706123564850/a9d080b4-8199-4e5d-907b-c027ff848da9.png)
 
 * Open your IDE Terminal.
     
@@ -51,7 +51,7 @@ git checkout YOUR_BRANCH_NAME
 
 * In your IDE, you will start by modifying the `./infra/modules/aws/s3/main.tf`
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706579968607/3d909a5f-0164-4fb9-bff1-fa3a2e7a9bcb.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706579968607/3d909a5f-0164-4fb9-bff1-fa3a2e7a9bcb.png)
     
 * Input the following to create an s3 bucket resource
     
@@ -66,7 +66,7 @@ git checkout YOUR_BRANCH_NAME
     ```
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706580365913/6157a0fd-f598-4ef8-8a9c-f5981107427c.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706580365913/6157a0fd-f598-4ef8-8a9c-f5981107427c.png)
 
 > This will create a bucket with a name that will be defined at a later time. The purpose of utilizing variables is so that you can reuse this configuration file by supplying a `bucket_name`.
 
@@ -87,7 +87,7 @@ git checkout YOUR_BRANCH_NAME
         ```
         
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706580556131/6ab0107d-4f0e-4fc6-b636-19f75fbe5322.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706580556131/6ab0107d-4f0e-4fc6-b636-19f75fbe5322.png)
 
 > Utilizing the `variable` block you are defining the input variable for bucket\_name. The expected input will be a string value, e.g. "myveryuniquelynamedbucket".
 > 
@@ -124,7 +124,7 @@ git checkout YOUR_BRANCH_NAME
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706581296220/0b11c7fc-1e4e-48fa-b3c2-c4cf18b19507.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706581296220/0b11c7fc-1e4e-48fa-b3c2-c4cf18b19507.png)
     
     > Referencing the Terraform S3 reference, these are the valid outputs available for the S3 Bucket.
     
@@ -141,7 +141,7 @@ In this section, you will prepare the S3 static website module. This will be the
 
 You will start with the `main.tf` in `./infra/modules/s3_cloudfront_site`. This module will reference the `./infra/modules/aws/s3/main.tf` resource.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706584709698/6c90d3e1-1ea5-47f6-b96f-ca07a8f249df.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706584709698/6c90d3e1-1ea5-47f6-b96f-ca07a8f249df.png)
 
 ### main.tf
 
@@ -155,7 +155,7 @@ You will start with the `main.tf` in `./infra/modules/s3_cloudfront_site`. This 
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706583144843/a44658b1-8532-42f3-8cfb-734f54723031.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706583144843/a44658b1-8532-42f3-8cfb-734f54723031.png)
     
 
 > The module block references the child module in ../aws/s3. This is the relative path to the current `main.tf` you are configuring.
@@ -179,7 +179,7 @@ You will start with the `main.tf` in `./infra/modules/s3_cloudfront_site`. This 
         }
         ```
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706583309852/7da8bbef-d96e-4e6e-92e0-f410c38a01d2.png align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706583309852/7da8bbef-d96e-4e6e-92e0-f410c38a01d2.png)
         
 * Save the file
     
@@ -212,7 +212,7 @@ You will start with the `main.tf` in `./infra/modules/s3_cloudfront_site`. This 
         }
         ```
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706584350177/5154b08c-8621-499d-8de0-356d04f63426.png align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706584350177/5154b08c-8621-499d-8de0-356d04f63426.png)
         
 
 > The output variable names are different here because in the future, there will be other resources that have `id` and `arn` values as well. To distinguish between where the value comes from it's good to give a unique identifier where the output is coming from.
@@ -226,7 +226,7 @@ You will start with the `main.tf` in `./infra/modules/s3_cloudfront_site`. This 
 
 ## Modifying my\_portfolio files
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706584764642/c9a52e7f-2067-4647-adf1-0a231f28a454.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706584764642/c9a52e7f-2067-4647-adf1-0a231f28a454.png)
 
 ### main.tf
 
@@ -244,7 +244,7 @@ This module will reference the s3\_cloudfront\_site module to create the S3 buck
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706584848744/c2e62e9b-1ec8-4560-8304-a62e433fc9b5.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706584848744/c2e62e9b-1ec8-4560-8304-a62e433fc9b5.png)
     
 
 > Similar to the other main.tf files, you are passing the variable bucket name, and referencing the s3\_cloudfront\_site module.
@@ -263,7 +263,7 @@ This module will reference the s3\_cloudfront\_site module to create the S3 buck
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706584896358/6e5a0e13-b3ee-4208-acc0-4a22b428d207.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706584896358/6e5a0e13-b3ee-4208-acc0-4a22b428d207.png)
     
     * Save the file
         
@@ -294,7 +294,7 @@ output "bucket_regional_domain_name" {
 }
 ```
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706585326577/56453cc5-2ff5-40e2-8f30-0fd835d3121c.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706585326577/56453cc5-2ff5-40e2-8f30-0fd835d3121c.png)
 
 * Save the file
     
@@ -305,7 +305,7 @@ output "bucket_regional_domain_name" {
 
 `./infra/main.tf` will be the module where all variables will be defined. This module will reference the my\_portfolio module.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706585547502/91dd9338-19b9-4cd1-a56a-164a8fa9df89.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706585547502/91dd9338-19b9-4cd1-a56a-164a8fa9df89.png)
 
 ### main.tf
 
@@ -319,7 +319,7 @@ output "bucket_regional_domain_name" {
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706585577652/fc3a011e-8657-42c4-956e-52e67a30c4d4.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706585577652/fc3a011e-8657-42c4-956e-52e67a30c4d4.png)
     
     * Save the file
         
@@ -364,9 +364,9 @@ I'm not too concerned about receiving these outputs, so I will not include it in
 * Uncomment the `on:` arguments in each
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706586311895/28b70a1f-debf-4d05-b493-aff009fd0a9a.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706586311895/28b70a1f-debf-4d05-b493-aff009fd0a9a.png)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706586333438/4daeb94b-a32d-4e4a-8087-81dc878d397a.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706586333438/4daeb94b-a32d-4e4a-8087-81dc878d397a.png)
 
 ---
 
@@ -413,9 +413,9 @@ git push
 
 Your Terraform Plan should run before you can merge to `main`.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706586627898/55a5693e-feff-4d66-863e-fb186860e341.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706586627898/55a5693e-feff-4d66-863e-fb186860e341.png)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706587216370/83ca847d-10e3-43b6-8bd2-5434d94e687a.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706587216370/83ca847d-10e3-43b6-8bd2-5434d94e687a.png)
 
 * Select Merge pull request &gt; Confirm merge.
     
@@ -450,7 +450,7 @@ git pull
     * In the Search bar, search for "s3" &gt; Select "Buckets"
         
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706587380370/338f9522-7436-4042-bf06-47dd9595d0bf.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706587380370/338f9522-7436-4042-bf06-47dd9595d0bf.png)
 
 ---
 

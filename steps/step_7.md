@@ -2,7 +2,7 @@
 
 In this module, you will create a Simple Notification Service (SNS) Topic and an SNS email subscription for your site contact form. This will enable visitors to send emails to you via your website.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707504353464/6cf50d2e-b744-4589-868d-b28a8afca56a.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707504353464/6cf50d2e-b744-4589-868d-b28a8afca56a.jpeg)
 
 ---
 
@@ -23,7 +23,7 @@ In this module, you will create a Simple Notification Service (SNS) Topic and an
 * Select **Submit new issue**
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707504720253/9a45e80a-2b8f-4a56-bc94-24f8978f44a0.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707504720253/9a45e80a-2b8f-4a56-bc94-24f8978f44a0.png)
 
 * On the right pane, under Development, Select **Create a branch**
     
@@ -48,7 +48,7 @@ git checkout YOUR_BRANCH_NAME
 
 In this section, you will be modifying the main, variables and outputs Terraform files located in `./infra/modules/aws/sns/`.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707504909138/e76bb858-f9b9-4a67-a7d9-48caa71efe48.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707504909138/e76bb858-f9b9-4a67-a7d9-48caa71efe48.png)
 
 ### main.tf
 
@@ -77,7 +77,7 @@ In this section, you will be modifying the main, variables and outputs Terraform
     
     > The SNS subscription will determine how the SNS Topic will be utilized. In this case, it will be used as an EMAIL protocol. The endpoint will be your email address.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707505287357/1aa879ee-527e-44ac-b67a-b94ae7c1f36d.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707505287357/1aa879ee-527e-44ac-b67a-b94ae7c1f36d.png)
     
 * Save the file
     
@@ -110,7 +110,7 @@ In this section, you will be modifying the main, variables and outputs Terraform
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707505828870/6f6cf0de-80fd-491d-b42b-3183fe0361b0.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707505828870/6f6cf0de-80fd-491d-b42b-3183fe0361b0.png)
     
 * Save the file
     
@@ -158,7 +158,7 @@ In this section, you will be modifying the main, variables and outputs Terraform
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707505959204/df3ba1f1-06ba-4e2b-85c8-907b0415467b.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707505959204/df3ba1f1-06ba-4e2b-85c8-907b0415467b.png)
     
     > These are optional as there are no required outputs for my\_portfolio or the ./infra/main.tf
     
@@ -186,7 +186,7 @@ In this section, you will modify the terraform files within `./infra/modules/my_
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707506271891/126186e3-ace8-41c0-afd2-8db5656a221a.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707506271891/126186e3-ace8-41c0-afd2-8db5656a221a.png)
     
 * Save the file
     
@@ -218,7 +218,7 @@ In this section, you will modify the terraform files within `./infra/modules/my_
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707506402251/a7682598-db59-46b6-80ae-d7019cff6fd4.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707506402251/a7682598-db59-46b6-80ae-d7019cff6fd4.png)
     
     > In this module, the topic\_protocol is given a default variable of "email".
     
@@ -268,7 +268,7 @@ In this section, you will modify the terraform files within `./infra/modules/my_
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707506622590/bf8c91a6-cfe2-499f-821b-3abdf9a0d325.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707506622590/bf8c91a6-cfe2-499f-821b-3abdf9a0d325.png)
     
     > These outputs are optional.
     
@@ -292,7 +292,7 @@ In this section, you will modify the terraform files within `./infra/modules/my_
           topic_endpoint = "YOUR_EMAIL_ADDRESS"
         ```
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707508205409/94497e04-ae95-4520-9b0a-c2c2440f470b.png align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707508205409/94497e04-ae95-4520-9b0a-c2c2440f470b.png)
         
 
 ### variables.tf and outputs.tf
@@ -341,7 +341,7 @@ output "sub_id" {
 }
 ```
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707507235716/a5a9b257-d656-44f9-992b-01889c18fa0a.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707507235716/a5a9b257-d656-44f9-992b-01889c18fa0a.png)
 
 > This will output those values to the Terraform Cloud outputs.
 
@@ -389,9 +389,9 @@ git push
 
 Your Terraform Plan should run before you can merge to `main`.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707507381035/e7ab7b40-f5a5-4146-bbd2-c7e953f8ac1d.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707507381035/e7ab7b40-f5a5-4146-bbd2-c7e953f8ac1d.png)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707496920823/d8e662b6-7ac7-4340-bf78-05b52d5a12bc.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707496920823/d8e662b6-7ac7-4340-bf78-05b52d5a12bc.png)
 
 > If you are using the same site files from the original template, the plan to add 2 should match.
 
@@ -417,9 +417,9 @@ git pull
 * Check your email and confirm the subscription
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707508661052/17174a62-4f45-47a3-9e24-e90d15d78caa.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707508661052/17174a62-4f45-47a3-9e24-e90d15d78caa.png)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707508673615/6b14d727-380a-4305-9bf7-f40060ab443d.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707508673615/6b14d727-380a-4305-9bf7-f40060ab443d.png)
 
 * AWS Management Console:
     
@@ -428,14 +428,14 @@ git pull
 * You should see your new SNS Topic listed
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707508824051/b35a27ca-7c8e-40b7-9257-72214becd592.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707508824051/b35a27ca-7c8e-40b7-9257-72214becd592.png)
 
 * Select Subscriptions:
     
     * You should see your email address confirmed if you selected the Confirm subscription from the email that you received.
         
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707508984521/98c22124-a80d-41b3-94ee-e9f9cec2296d.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707508984521/98c22124-a80d-41b3-94ee-e9f9cec2296d.png)
 
 ---
 

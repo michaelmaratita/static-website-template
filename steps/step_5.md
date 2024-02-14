@@ -2,7 +2,7 @@
 
 In this module you will create an S3 static hosted website that will be accessible through a CloudFront Distribution. By doing this, you will block all direct public access to your S3 objects, and they will only be available through the content delivery network. This will also provide an HTTPS connection, instead of the static website hosting URL that is HTTP. You will create a bucket policy so that CloudFront will have access to "GetObject" from the S3 Bucket. Let's get started!
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706714158216/e67753cd-1812-4aa1-a043-be39c96e39c8.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706714158216/e67753cd-1812-4aa1-a043-be39c96e39c8.jpeg)
 
 ---
 
@@ -27,14 +27,14 @@ In this module you will create an S3 static hosted website that will be accessib
 * Select **Submit new issue**
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706715508854/e98765ef-af3c-4391-82ad-404bb9c3e3d5.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706715508854/e98765ef-af3c-4391-82ad-404bb9c3e3d5.png)
 
 * On the right pane, under Development, Select **Create a branch**
     
 * Leave the defaults &gt; Select **Create branch**
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706715531085/ed8dc3b4-f542-4b5b-a5af-a0a399c40f19.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706715531085/ed8dc3b4-f542-4b5b-a5af-a0a399c40f19.png)
 
 * Open your IDE Terminal.
     
@@ -60,7 +60,7 @@ Note the start of your current bucket, should be like below.
     * Scroll to the bottom and see **Static website hosting**
         
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706714642492/3d22d144-cf77-4c7e-bb85-f0ce8830286a.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1706714642492/3d22d144-cf77-4c7e-bb85-f0ce8830286a.png)
 
 ---
 
@@ -124,7 +124,7 @@ Note the start of your current bucket, should be like below.
         > 
         > The policy is then attached as a bucket policy to the bucket you created.
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707369187303/fc230a84-74b8-4eec-a7c3-3b18e398262a.png align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707369187303/fc230a84-74b8-4eec-a7c3-3b18e398262a.png)
         
 * Save the file
     
@@ -234,7 +234,7 @@ Note the start of your current bucket, should be like below.
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707374483990/30df6d6d-a234-4245-84b0-6c0b661b2254.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707374483990/30df6d6d-a234-4245-84b0-6c0b661b2254.png)
     
 * Save the file
     
@@ -362,7 +362,7 @@ Note the start of your current bucket, should be like below.
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707372360304/0d979d2e-820f-4138-961f-f319a2c6d6ac.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707372360304/0d979d2e-820f-4138-961f-f319a2c6d6ac.png)
     
     * Save the file
         
@@ -433,7 +433,7 @@ Note the start of your current bucket, should be like below.
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707370992979/1c821cc5-4dc9-4ed8-bd1a-f8042a586591.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707370992979/1c821cc5-4dc9-4ed8-bd1a-f8042a586591.png)
     
     * Save the file
         
@@ -477,7 +477,7 @@ Note the start of your current bucket, should be like below.
     > Module block for CloudFront Distribution
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707378928842/e05c75bf-1fd3-4ae2-ae8e-ea413973238a.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707378928842/e05c75bf-1fd3-4ae2-ae8e-ea413973238a.png)
 
 * Save the file
     
@@ -518,7 +518,7 @@ Note the start of your current bucket, should be like below.
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707374402535/43f1f572-22a8-470d-a684-9d534d44c770.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707374402535/43f1f572-22a8-470d-a684-9d534d44c770.png)
     
 
 ### outputs.tf
@@ -587,7 +587,7 @@ Note the start of your current bucket, should be like below.
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707494899335/a84b7308-b22b-4120-bc59-197dc89f0f0b.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707494899335/a84b7308-b22b-4120-bc59-197dc89f0f0b.png)
     
 * Save the file
     
@@ -611,7 +611,7 @@ Note the start of your current bucket, should be like below.
       bucket_policy_sid = var.bucket_policy_sid
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707373958063/822f6691-95f0-41fe-b4ff-e7b03fd19177.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707373958063/822f6691-95f0-41fe-b4ff-e7b03fd19177.png)
     
 * Save the file
     
@@ -647,7 +647,7 @@ Note the start of your current bucket, should be like below.
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707374208293/aa288357-4f9d-42da-ab4f-247238efb140.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707374208293/aa288357-4f9d-42da-ab4f-247238efb140.png)
     
     * Save the file
         
@@ -718,7 +718,7 @@ Note the start of your current bucket, should be like below.
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707495040088/080c4a47-d922-4cf7-acbb-6a2048435860.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707495040088/080c4a47-d922-4cf7-acbb-6a2048435860.png)
     
 * Save the file
     
@@ -739,7 +739,7 @@ Note the start of your current bucket, should be like below.
       cloudfront_comment = "Static website hosting for my personal website."
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707378328780/db374a0f-1071-4956-a15b-3701fc7473df.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707378328780/db374a0f-1071-4956-a15b-3701fc7473df.png)
     
 * Save the file
     
@@ -757,7 +757,7 @@ Note the start of your current bucket, should be like below.
         }
         ```
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707495205981/96a7651c-2a48-4482-8443-1eafd562447a.png align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707495205981/96a7651c-2a48-4482-8443-1eafd562447a.png)
         
 * Save the file
     
@@ -806,9 +806,9 @@ git push
 
 Your Terraform Plan should run before you can merge to `main`.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707378711398/7e8337b2-c8d0-4690-b34a-ebbfd467dbe7.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707378711398/7e8337b2-c8d0-4690-b34a-ebbfd467dbe7.png)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707379105518/e1f4614b-fddb-43e9-b70f-280dc2708b2d.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707379105518/e1f4614b-fddb-43e9-b70f-280dc2708b2d.png)
 
 > If you are using the same site files from the original template, the plan to add 4 should match.
 
@@ -838,7 +838,7 @@ git pull
     * Notice your bucket state under properties:
         
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707412758101/41afd7dc-38c6-4730-af33-ce50b5d2847c.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707412758101/41afd7dc-38c6-4730-af33-ce50b5d2847c.png)
     
     > Note this URL will not be accessible directly due to the bucket policy restrictions from public access.
     
@@ -847,12 +847,12 @@ git pull
     * Locate your distribution and note the Domain name. This will be how you access your site.
         
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707379359892/9d1c3487-438b-4ff2-9a90-9ea683e78dea.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707379359892/9d1c3487-438b-4ff2-9a90-9ea683e78dea.png)
 
 * Once the CloudFront Distribution completes it's deployment, navigate to the CloudFront URL.
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707379535778/c5a14b16-a91f-42dd-b0d1-501ec8548256.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707379535778/c5a14b16-a91f-42dd-b0d1-501ec8548256.png)
 
 ---
 

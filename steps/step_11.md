@@ -2,7 +2,7 @@
 
 In this final module, you will create an ACM certificate and Route53 entries for CloudFront and API Gateway using your custom domain name. This will present a more profession website that can be shared with others.
 
-[![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707844951736/cd169e00-72c2-425b-bd48-5cc301d91131.jpeg align="center")](https://cdn.hashnode.com/res/hashnode/image/upload/v1707844951736/cd169e00-72c2-425b-bd48-5cc301d91131.jpeg)
+[![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707844951736/cd169e00-72c2-425b-bd48-5cc301d91131.jpeg)](https://cdn.hashnode.com/res/hashnode/image/upload/v1707844951736/cd169e00-72c2-425b-bd48-5cc301d91131.jpeg)
 
 ---
 
@@ -25,14 +25,14 @@ In this final module, you will create an ACM certificate and Route53 entries for
 * Select Submit new issue.
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707845107781/ca758254-9611-42f4-baba-d3784eed8ae4.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707845107781/ca758254-9611-42f4-baba-d3784eed8ae4.png)
 
 * On the right pane, under Development, Select Create a branch.
     
 * Leave the defaults &gt; Select Create branch.
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707845132555/b858ab84-a319-43ac-8741-7895a2f25b6b.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707845132555/b858ab84-a319-43ac-8741-7895a2f25b6b.png)
 
 * Open your IDE Terminal.
     
@@ -84,7 +84,7 @@ In this section, you will configure the creation for your Amazon Certificate Man
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707846091712/4c19ac13-d465-427a-8d15-699468713c0b.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707846091712/4c19ac13-d465-427a-8d15-699468713c0b.png)
     
     > The requirement for CloudFront to utilize the ACM certificate, it has to be created in the us-east-1 region. The provider block creates an alias for that region so that it can be utilized for CloudFront. The ACM Certificate Validation block automates the DNS validation for the certificate in Route53.
     
@@ -127,7 +127,7 @@ In this section, you will configure the creation for your Amazon Certificate Man
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707846623427/b1cc2ac0-8710-4ae8-b2ab-6aa695cd3142.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707846623427/b1cc2ac0-8710-4ae8-b2ab-6aa695cd3142.png)
     
 * Save the file
     
@@ -222,7 +222,7 @@ In this section, you will configure the creation for your Amazon Certificate Man
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707846902898/939f9161-5631-454a-b4cc-665075062fd5.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707846902898/939f9161-5631-454a-b4cc-665075062fd5.png)
     
 * Save the file
     
@@ -264,7 +264,7 @@ You will start by creating the validation in Route53 for the ACM certificate.
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707847670953/3d1e6d8a-058f-434f-b3d6-e37f00a1031f.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707847670953/3d1e6d8a-058f-434f-b3d6-e37f00a1031f.png)
     
 * Save the file
     
@@ -301,7 +301,7 @@ You will start by creating the validation in Route53 for the ACM certificate.
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707847831067/1df5c1d5-5622-4afc-92fc-aa05a5c81de4.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707847831067/1df5c1d5-5622-4afc-92fc-aa05a5c81de4.png)
     
 * Save the file
     
@@ -322,7 +322,7 @@ You will start by creating the validation in Route53 for the ACM certificate.
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707847909290/c8d2e524-5aba-49df-a176-6632bd177817.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707847909290/c8d2e524-5aba-49df-a176-6632bd177817.png)
     
 * Save the file
     
@@ -349,7 +349,7 @@ In this section, you will create an entry for Route53 "A" records
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707848079436/a4827550-cb45-4312-85c2-1ddd8edeb6a6.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707848079436/a4827550-cb45-4312-85c2-1ddd8edeb6a6.png)
     
 * Save the file
     
@@ -385,7 +385,7 @@ In this section, you will create an entry for Route53 "A" records
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707848146324/6fc37814-22ca-47d1-a6cb-b8c9835e7038.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707848146324/6fc37814-22ca-47d1-a6cb-b8c9835e7038.png)
     
 * Save the file
     
@@ -421,7 +421,7 @@ In this section, you will create an entry for Route53 "A" records
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707848246853/2cf99037-076b-4949-a377-107c5e1ee2a6.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707848246853/2cf99037-076b-4949-a377-107c5e1ee2a6.png)
     
 * Save the file
     
@@ -445,11 +445,11 @@ Now that the entries for Route53 have been made, you will need to update your Cl
     
     > Before
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707849380909/45bdfd15-1517-4c84-a012-95f35fde1567.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707849380909/45bdfd15-1517-4c84-a012-95f35fde1567.png)
     
     > After
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707849339974/a73ae142-6fdc-4d62-8ead-5851451d4eb5.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707849339974/a73ae142-6fdc-4d62-8ead-5851451d4eb5.png)
     
     * viewer\_certificate
         
@@ -464,11 +464,11 @@ Now that the entries for Route53 have been made, you will need to update your Cl
         
         > Before
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707849438655/5d0465e0-c485-4348-b1e1-fb9861e307c4.png align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707849438655/5d0465e0-c485-4348-b1e1-fb9861e307c4.png)
         
         > After
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707849570938/32b6e44d-5fcc-48a0-a9d8-2634ca38433c.png align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707849570938/32b6e44d-5fcc-48a0-a9d8-2634ca38433c.png)
         
 * Save the file
     
@@ -501,7 +501,7 @@ Now that the entries for Route53 have been made, you will need to update your Cl
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707851780528/177076be-4b36-4163-a47b-dc0f56fac3a5.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707851780528/177076be-4b36-4163-a47b-dc0f56fac3a5.png)
     
 * Save the file
     
@@ -523,7 +523,7 @@ Because the cloudfront\_distribution module has been updated, you will need to u
       valid_certificate_arn       = var.certificate
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707868076595/5192b6cf-8607-4603-aa64-c48d96f26747.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707868076595/5192b6cf-8607-4603-aa64-c48d96f26747.png)
     
 
 ### variables.tf
@@ -542,7 +542,7 @@ Because the cloudfront\_distribution module has been updated, you will need to u
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707868106960/79d27d48-6ab7-4241-90c3-b8cab06376ee.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707868106960/79d27d48-6ab7-4241-90c3-b8cab06376ee.png)
     
 * Save the file
     
@@ -566,7 +566,7 @@ In this section, you will create the custom domain name for your API Gateway. Lo
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707867238210/39a1be03-44f1-4e83-bede-8f06a1dc7021.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707867238210/39a1be03-44f1-4e83-bede-8f06a1dc7021.png)
     
 * Save the file
     
@@ -588,7 +588,7 @@ In this section, you will create the custom domain name for your API Gateway. Lo
     ```
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707867394038/a518d30b-d1d4-47b7-90e0-3da9f74d9601.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707867394038/a518d30b-d1d4-47b7-90e0-3da9f74d9601.png)
 
 * Save the file
     
@@ -644,7 +644,7 @@ In this section, you will create the custom domain name for your API Gateway. Lo
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707867554088/47190d49-241c-46bd-8886-320102f69de3.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707867554088/47190d49-241c-46bd-8886-320102f69de3.png)
     
 * Save the file
     
@@ -667,7 +667,7 @@ In this section, you will point your currently deployed API Gateway to the custo
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707873226891/ab6eccc9-9425-4146-9fbe-477d6a924194.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707873226891/ab6eccc9-9425-4146-9fbe-477d6a924194.png)
     
 * Save the file
     
@@ -683,7 +683,7 @@ In this section, you will point your currently deployed API Gateway to the custo
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707873300103/579f887e-c51a-41fe-b9c9-3865f8b3a570.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707873300103/579f887e-c51a-41fe-b9c9-3865f8b3a570.png)
     
 * Save the file
     
@@ -703,7 +703,7 @@ In this section, you will update your static\_website module and include entries
       certificate       = module.acm.validation_certificate_arn
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707868755378/74488578-59c0-46c0-9106-db133c77149b.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707868755378/74488578-59c0-46c0-9106-db133c77149b.png)
     
 * Include the following to update your api\_deployment
     
@@ -711,7 +711,7 @@ In this section, you will update your static\_website module and include entries
     domain_name = var.api_domain_name
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707873421300/b7503de2-bbfc-4754-b8cd-f0f7ff9ac45d.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707873421300/b7503de2-bbfc-4754-b8cd-f0f7ff9ac45d.png)
     
 
 * Include the following to create the ACM certificate
@@ -738,7 +738,7 @@ In this section, you will update your static\_website module and include entries
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707868840893/91e2cf07-90d3-4588-b287-883bd404902d.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707868840893/91e2cf07-90d3-4588-b287-883bd404902d.png)
     
     * Input the following to define the API Gateway domain name
         
@@ -763,7 +763,7 @@ In this section, you will update your static\_website module and include entries
         }
         ```
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707869104187/d0b74904-6e1d-425f-8437-d88f124d4c3a.png align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707869104187/d0b74904-6e1d-425f-8437-d88f124d4c3a.png)
         
 * Input the following to define the Route53 record for your CloudFront Distribution
     
@@ -780,7 +780,7 @@ In this section, you will update your static\_website module and include entries
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707870133517/080a7e24-029a-4ecb-b4f9-f1113e6366f3.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707870133517/080a7e24-029a-4ecb-b4f9-f1113e6366f3.png)
     
 * Save the file
     
@@ -806,7 +806,7 @@ In this section, you will update your static\_website module and include entries
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707869466775/71187a08-39ad-4542-a206-9270a8427bff.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707869466775/71187a08-39ad-4542-a206-9270a8427bff.png)
     
 * Save the file
     
@@ -822,7 +822,7 @@ In this section, you will update your static\_website module and include entries
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707869537265/0fa7011b-54b5-48fa-9868-40ea7ce9daf1.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707869537265/0fa7011b-54b5-48fa-9868-40ea7ce9daf1.png)
     
 * Save the file
     
@@ -838,7 +838,7 @@ In this section, you will update your static\_website module and include entries
       api_domain_name = "YOUR_API_DOMAIN_NAME"
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707869724874/f35c5e9e-555f-492c-b9f2-061759fb2097.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707869724874/f35c5e9e-555f-492c-b9f2-061759fb2097.png)
     
 * Save the file
     
@@ -853,7 +853,7 @@ In this section, you will update your JavaScript files to include your new API G
 
 * Update your JavaScript file to include your new URL
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707871288875/85cb7014-7067-4245-88de-28723397bbd2.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707871288875/85cb7014-7067-4245-88de-28723397bbd2.png)
     
 * Save the file
     
@@ -862,7 +862,7 @@ In this section, you will update your JavaScript files to include your new API G
 
 * Update your JavaScript file to include your new URL
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707871360334/7dd0d0db-c88e-451a-83fb-4b2d4747a7a2.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707871360334/7dd0d0db-c88e-451a-83fb-4b2d4747a7a2.png)
     
 * Save the file
     
@@ -911,9 +911,9 @@ git push
 
 Your Terraform Plan should run before you can merge to `main`.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707507381035/e7ab7b40-f5a5-4146-bbd2-c7e953f8ac1d.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707507381035/e7ab7b40-f5a5-4146-bbd2-c7e953f8ac1d.png)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707870713973/52db8e55-d07b-47c0-99db-2cef5b8b7d95.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707870713973/52db8e55-d07b-47c0-99db-2cef5b8b7d95.png)
 
 > Note: My plan outputs will be different due to having an already existing ACM certificate.
 
@@ -941,16 +941,16 @@ git pull
 * Validate your Viewer Count populates with a value
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707871685529/b4730106-d26c-4e80-ac46-218540b3f075.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707871685529/b4730106-d26c-4e80-ac46-218540b3f075.png)
 
 * Test your SNS functionality and ensure you are able to receive emails
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707872320823/3bf31803-13cb-499c-91c5-6e11e254daa0.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707872320823/3bf31803-13cb-499c-91c5-6e11e254daa0.png)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707872334611/3c8cd13e-7678-4b14-b785-6c7970e8d28c.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707872334611/3c8cd13e-7678-4b14-b785-6c7970e8d28c.png)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707872971529/5b381cd8-1c8e-47aa-bbc5-609eb7586998.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1707872971529/5b381cd8-1c8e-47aa-bbc5-609eb7586998.png)
 
 ---
 
