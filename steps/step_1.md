@@ -15,7 +15,7 @@ I will explain everything in detail to mitigate any confusion for anyone new to 
 
 ## Architecture Diagram
 
-[![](https://cdn.hashnode.com/res/hashnode/image/upload/v1705609580769/890b8d80-d051-40ed-8a8a-1f9f4b178913.png?height=750 align="center")](https://cdn.hashnode.com/res/hashnode/image/upload/v1705609580769/890b8d80-d051-40ed-8a8a-1f9f4b178913.png)
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1705609580769/890b8d80-d051-40ed-8a8a-1f9f4b178913.png)
 
 Select the Architecture Diagram to gain better insight into the final state of this project. I have a template repo that you can access [here](https://github.com/michaelmaratita/sample-cloud-resume), or you can follow along with the modules to gain insights into the deployment.
 
